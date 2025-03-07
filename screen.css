@@ -1,4 +1,90 @@
-/* Add screen styles below */
-a.active {
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+    margin: 0;
+}
+
+
+.title {
+    
+    font-size: 50px;
+    font-weight: bold;
+    display: flex;
+    align-self: flex-start;
+    position: relative; 
+    left: 500px; 
+    margin-bottom: 20px;
+    }
+
+
+.light-blue {
+    color: #2B44AA;
+}
+
+.dark-blue {
+    color: #321D5B; 
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.sun-card {
+    background: linear-gradient(to bottom, #2B44AA, #321D5B);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 250px;
+    height: 400px;
+    color: white;
+}
+
+.sun-card img {
+    width: 100%;
+    padding-top: 15px; 
+    margin-bottom: 10px; 
+}
+
+.sun-card p {
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.planets-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.planet-card {
+    background: linear-gradient(to bottom, #2B44AA, #321D5B);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 120px;
+    height: 180px;
+    color: white;
+}
+
+.planet-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    padding-top: 10px; 
+    margin-bottom: 8px; 
+}
+
+.planet-card p {
+    margin: 5px 0;
     font-weight: bold;
 }
